@@ -1,0 +1,30 @@
+{
+  "namespace": "com.softtech.stock.tick.avro",
+  "type": "record",
+  "name": "StockTick",
+  "version": 1,
+  "doc": "Avro schema for our stock tick.",
+  "fields": [
+    {
+      "name": "symbol",
+      "type": "string"
+    },
+    {
+      "name": "exchange",
+      "type": "string"
+    },
+    {
+      "name": "tradeValue",
+      "type": "string"
+    },
+    {
+      "name": "currency",
+      "type": "string"
+    },
+    {
+      "name": "tradeTime",
+      "type": "string",
+      "logicalType": "timestamp-millis"
+    }
+  ]
+}
